@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href=".css" />
+    <script src="main.js"></script>
+    <style>
+          ul{
+         padding: 0px;
+                overflow: hidden;
+                    margin: 0px;
+                         list-style-type: none;
+                             background-color: black;
+    }
+    li{
+        float: right;
+    }
+    li a{
+        display: block;
+            padding: 10px;
+                color: whitesmoke;
+                text-decoration: none;
+    }
+    a:hover{
+        background-color: gray;
+    }
+    .on{ 
+        font-size:50px;
+        text-align: center; 
+    }
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    body{
+        background-color: whitesmoke;
+    } 
+   a:active{
+       background-color:grey;
+   }
+   .mySlides {
+       margin: 0 auto;
+       align-content: center;
+       background-position: center;
+       width:70rem;
+       height: 30rem;
+    display:none;
+}
+.container{
+   margin: 0 auto;
+ }
+             
+
+    </style>
+</head>
+<body>
+    <div>
+    <header class="booty">
+            <div >
+                <nav>
+                    <ul>
+                         <label style="color:dimgrey; font-size:40px"><i><b>ASEOFO</b></i></label>
+                        <li><a href="#" class = "active">contact-us</a></li>
+                        <li><a href="sign_in.php">about-us</a></li>
+                        <li><a href="index.php">Home</a></li>
+                    </ul>
+                    </nav>
+                </header>
+            </div>
+</div>
+
+<div class="w3-content w3-section" style="max-width:500px">
+    <div class="container">
+    <img class="mySlides" src="images/com-a.jpg">
+    <img class="mySlides" src="images/com-b.jpg">
+    <img class="mySlides" src="images/com-c.jpg"> 
+    <img class="mySlides" src="images/com-d.jpg">
+    </div>
+  </div>
+  
+  <script>
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+  }
+  </script>
+  
+</body>
+</html>
