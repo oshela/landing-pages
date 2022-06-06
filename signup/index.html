@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <title>Document</title>
+   
+</head>
+<body>
+    <div class="container">
+        <main>
+    <!-- sign up form -->
+            <div class="form signUp-form">
+                <h2>Create Account</h2>
+                <form action="">
+                    <label for="user_name" >Name</label>
+                    <input type="text" id="user_name">
+    
+                    <label for="user_Email" >Email</label>
+                    <input type="email" id="user_Email">
+    
+                    <label for="user_Password" >Password</label>
+                    <input type="text" id="user_Password">
+    
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+            <!-- sign in form -->
+            <div class="form signIn-form">
+                <h2>login</h2>
+                <form action="">
+    
+                    <label for="user_Email" >Email</label>
+                    <input type="email" id="user_Email">
+    
+                    <label for="user_Password" >Password</label>
+                    <input type="text" id="user_Password">
+    
+                    <button type="submit">Sign In</button>
+                </form>
+            </div>
+        </main>
+        <aside>
+            <!-- sign in block in aside -->
+            <div class="sign-in-block">
+                <h2>Already a User?</h2>
+                <button type="submit" id="sign-in-btn">Sign in</button>
+            </div>
+            <!-- sign up block in aside -->
+            <div class="sign-up-block">
+                <h2>New User?</h2>
+                <button type="submit" id="sign-up-btn">Sign Up</button>
+            </div>
+        </aside>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
